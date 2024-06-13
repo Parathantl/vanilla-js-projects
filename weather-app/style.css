@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+button {
+    background: #5151E5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3b3bb3;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#weather-icon {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 10px;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #temp-div p {
+        font-size: 40px;
+    }
+
+    .hourly-item {
+        width: 50px;
+    }
+
+    .hourly-item img {
+        width: 30px;
+        height: 30px;
+    }
+}
